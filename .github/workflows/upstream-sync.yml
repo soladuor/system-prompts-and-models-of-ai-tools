@@ -21,7 +21,7 @@ permissions:
 
 env:
   # 上游仓库地址（owner/repo）
-  UPSTREAM_REPO: <上游仓库地址>
+  UPSTREAM_REPO: x1xhlol/system-prompts-and-models-of-ai-tools
 
 jobs:
   sync:
@@ -30,7 +30,7 @@ jobs:
     # 使用矩阵，同步多个分支时，只需在下面的数组中添加分支名即可
     strategy:
       matrix:
-        branch: [ <需要同步的分支> ] # 可扩展为 [main, dev, release] 等
+        branch: [ main ] # 可扩展为 [main, dev, release] 等
 
     steps:
       # 步骤1：把本仓库代码拉下来，供后面合并
